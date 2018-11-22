@@ -17,7 +17,7 @@ public class Document {
 
     @Lob
     @Nullable
-    @Column(name = "[FILE]")
+    @Column(name = "[FILE]", columnDefinition = "TEXT")
     private byte[] file;
 
 
