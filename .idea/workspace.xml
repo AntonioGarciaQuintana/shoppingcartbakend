@@ -2,104 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="feb316ee-8969-4432-9b3d-dbf37f2d176d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/application/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/application/configuration/WebConfiguration$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/application/configuration/WebConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/application/configuration/WebMvcConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/controllers/AccountController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/controllers/DocumentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/controllers/ProductController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/controllers/SaleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/controllers/UtilController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/dtos/TransferProduct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/entities/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/entities/DetailSale.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/entities/Document.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/entities/Movie.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/entities/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/entities/Sale.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/entities/User$Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/entities/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/enums/CateroryEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/enums/ClassificationEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/enums/GenreEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/repositories/DocumentRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/repositories/ProductRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/repositories/SaleRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/repositories/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/services/DocumentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/services/Impl/AppUserDetailsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/services/Impl/DocumentServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/services/Impl/ProductServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/services/Impl/SaleServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/services/Impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/services/ProductService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/services/SaleService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/classes/com/shopping/services/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/HikariCP-2.7.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.8.13.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/classmate-1.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/dom4j-1.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/hibernate-commons-annotations-5.0.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/hibernate-core-5.2.16.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/hibernate-validator-6.0.9.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.9.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.9.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/jackson-datatype-jdk8-2.9.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/jackson-datatype-jsr310-2.9.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/jackson-module-parameter-names-2.9.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/jandex-2.0.3.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.22.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/javax.annotation-api-1.3.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/javax.transaction-api-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/javax.ws.rs-api-2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/jaxb-api-2.3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/jul-to-slf4j-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/log4j-api-2.10.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/log4j-to-slf4j-2.10.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/logback-classic-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/logback-core-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/mssql-jdbc-6.2.2.jre8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/snakeyaml-1.19.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-aspects-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-2.0.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-autoconfigure-2.0.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-2.0.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-aop-2.0.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-data-jpa-2.1.0.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-jdbc-2.0.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-json-2.0.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-logging-2.0.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-security-2.0.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-tomcat-2.1.0.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-web-2.0.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-context-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-core-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-data-commons-2.0.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-data-jpa-2.0.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-orm-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-security-config-5.0.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-security-core-5.0.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-security-web-5.0.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-web-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/tomcat-embed-core-8.5.29.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/tomcat-embed-el-8.5.29.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/tomcat-embed-websocket-8.5.29.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingcar-1.0-SNAPSHOT/WEB-INF/lib/validation-api-2.0.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -182,7 +86,7 @@
           <entry key="class" value="2" />
           <entry key="java" value="6" />
           <entry key="properties" value="3" />
-          <entry key="xml" value="3" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -190,7 +94,7 @@
           <entry key="CLASS" value="2" />
           <entry key="JAVA" value="6" />
           <entry key="Properties" value="3" />
-          <entry key="XML" value="3" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -198,7 +102,7 @@
           <entry key="java" value="403" />
           <entry key="properties" value="126" />
           <entry key="txt" value="6" />
-          <entry key="xml" value="2" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -206,7 +110,7 @@
           <entry key="JAVA" value="403" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="Properties" value="126" />
-          <entry key="XML" value="2" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -236,11 +140,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="455">
+              <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/shopping/application/configuration/WebMvcConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -248,11 +161,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="19" lean-forward="true" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -267,19 +180,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shopping/services/ProductService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/shopping/services/Impl/ProductServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="263">
-              <caret line="85" column="50" lean-forward="true" selection-start-line="85" selection-start-column="50" selection-end-line="85" selection-end-column="50" />
+              <caret line="85" column="50" selection-start-line="85" selection-start-column="50" selection-end-line="85" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -291,7 +195,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/shopping/repositories/ProductRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -342,6 +246,7 @@
       <find>spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation</find>
       <find>maven</find>
       <find>server.port</find>
+      <find>build</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -383,12 +288,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/shopping/services/Impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shopping/application/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shopping/entities/Sale.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/shopping/repositories/ProductRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shopping/services/Impl/ProductServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shopping/application/configuration/WebConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/system.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -468,7 +373,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542906790792" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542907742006" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -609,7 +514,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1609808" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1609808" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -618,7 +523,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29577464" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29577464" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.41928494" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -981,14 +886,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shopping/repositories/ProductRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shopping/services/Impl/ProductServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
-          <caret line="85" column="50" lean-forward="true" selection-start-line="85" selection-start-column="50" selection-end-line="85" selection-end-column="50" />
+          <caret line="85" column="50" selection-start-line="85" selection-start-column="50" selection-end-line="85" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1010,17 +915,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shopping/application/configuration/WebMvcConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -1041,7 +939,14 @@
     <entry file="file://$PROJECT_DIR$/system.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="19" lean-forward="true" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
         </state>
       </provider>
     </entry>
@@ -1064,6 +969,7 @@
   </component>
   <component name="mavenExecuteGoalHistory">
     <option value="$PROJECT_DIR$" />
+    <option value="clean package" />
     <option value="compile war:war" />
   </component>
 </project>
