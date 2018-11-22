@@ -90,6 +90,21 @@
 
     <build>
         <plugins>
+            <plugin>
+                <!-- Build an executable JAR -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                            <mainClass>com.shopping.application.Application</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
 
             <!-- Heroku Maven Plugin Configuration -->
             <plugin>
@@ -107,12 +122,12 @@
                         <!--<processTypes>-->
                             <!--<web>java $JAVA_OPTS -cp target/classes:target/dependency/* com.shopping.application.Application</web>-->
                         <!--</processTypes>-->
-                    <processTypes>
-                    <web>java $JAVA_OPTS -cp target/classes:target/m2e-wtp/*.jar com.shopping.application.Application</web>
-                    </processTypes>
                     <!--<processTypes>-->
-                        <!--<web>java $JAVA_OPTS -jar ${project.build.directory}/${project.build.finalName}.jar</web>-->
+                    <!--<web>java $JAVA_OPTS -cp target/classes:target/m2e-wtp/*.jar com.shopping.application.Application</web>-->
                     <!--</processTypes>-->
+                    <processTypes>
+                        <web>java $JAVA_OPTS -jar ${project.build.directory}/${project.build.finalName}.jar</web>
+                    </processTypes>
                 </configuration>
             </plugin>
 
