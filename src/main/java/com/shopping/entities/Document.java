@@ -1,5 +1,6 @@
 package com.shopping.entities;
 
+import org.hibernate.annotations.Type;
 import org.springframework.lang.Nullable;
 
 import javax.persistence.*;
@@ -17,7 +18,8 @@ public class Document {
 
     @Lob
     @Nullable
-    @Column(name = "[FILE]", columnDefinition = "TEXT")
+    @Type(type = "text")
+    @Column(name = "[FILE]")
     private byte[] file;
 
 
