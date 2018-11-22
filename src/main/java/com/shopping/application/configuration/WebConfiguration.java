@@ -38,7 +38,10 @@ public class WebConfiguration extends WebSecurityConfigurerAdapter {
         return new WebMvcConfigurerAdapter() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**").allowedOrigins("http://localhost:4200");
+                // Heroku deploy
+                registry.addMapping("/**").allowedOrigins("https://shoppingcartfrontend.herokuapp.com");
+               // DEV
+                // registry.addMapping("/**").allowedOrigins("http://localhost:4200");
 
             }
 //            @Override

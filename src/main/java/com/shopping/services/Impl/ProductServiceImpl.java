@@ -3,9 +3,11 @@ package com.shopping.services.Impl;
 import com.shopping.entities.Book;
 import com.shopping.entities.Movie;
 import com.shopping.entities.Product;
+import com.shopping.entities.User;
 import com.shopping.enums.CateroryEnum;
 import com.shopping.repositories.ProductRepository;
 import com.shopping.services.ProductService;
+import com.shopping.services.UserService;
 import org.apache.logging.log4j.util.ProcessIdUtil;
 import org.apache.tomcat.util.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,10 +23,12 @@ import java.util.List;
 public class ProductServiceImpl implements ProductService {
 
     private ProductRepository productRepository;
+    private UserService userService;
 
     @Autowired
-    ProductServiceImpl(ProductRepository productRepository){
+    ProductServiceImpl(ProductRepository productRepository, UserService userService){
         this.productRepository = productRepository;
+        this.userService = userService;
     }
 
     public Product saveProduct(Product product) {
@@ -43,6 +47,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Page<Product> getPage(Pageable pageable, String search, CateroryEnum cateroryEnum) {
+        saveDefaultAdmin();
         Page<Product> page = this.productRepository.getPage(pageable, search, cateroryEnum);
         page.getContent().forEach( product -> {
             product.setImageUrl(encodeBase(product.getDocument().getFile()));
@@ -57,6 +62,30 @@ public class ProductServiceImpl implements ProductService {
             product.setImageUrl(encodeBase(product.getDocument().getFile()));
         });
         return page;
+    }
+
+    public void saveDefaultAdmin(){
+        User userAdmin = new User();
+        userAdmin.setRole("ADMIN");
+        userAdmin.setFullName("Administrator");
+        userAdmin.setUsername("admin@pinnacle.com");
+        userAdmin.setPassword("admin");
+
+        User userClient = new User();
+        userClient.setRole("USER");
+        userClient.setFullName("Client defaul");
+        userClient.setUsername("clientdefault@pinnacle.com");
+        userClient.setPassword("default");
+
+        User existUserAdmin = this.userService.getUserByUserName("admin@pinnacle.com");
+        User existUserClient = this.userService.getUserByUserName("clientdefault@pinnacle.com");
+        if(existUserAdmin == null){
+            this.userService.saveUser(userAdmin);
+        }
+        if(existUserClient == null){
+            this.userService.saveUser(userClient);
+        }
+
     }
 
     @Override
