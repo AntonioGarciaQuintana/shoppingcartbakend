@@ -15,11 +15,13 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 @Service
+@Transactional
 public class ProductServiceImpl implements ProductService {
 
     private ProductRepository productRepository;
@@ -46,6 +48,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
+
     public Page<Product> getPage(Pageable pageable, String search, CateroryEnum cateroryEnum) {
         saveDefaultAdmin();
         Page<Product> page = this.productRepository.getPage(pageable, search, cateroryEnum);
@@ -101,6 +104,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
+    @Transactional
     public List<Product> getProductsByIds(String ids) {
         List<Long> idsProd = new ArrayList<>();
         for (String id: ids.split(",") ) {

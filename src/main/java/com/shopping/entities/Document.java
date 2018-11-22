@@ -16,9 +16,8 @@ public class Document {
     @Column(name = "doc_name")
     private String docName;
 
-    @Lob
-    @Nullable
-    @Type(type = "text")
+    @Lob()
+    @Nullable()
     @Column(name = "[FILE]")
     private byte[] file;
 

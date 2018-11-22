@@ -3,6 +3,7 @@ package com.shopping.application.configuration;
 import com.shopping.services.Impl.AppUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Configurable;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -25,6 +26,10 @@ public class WebConfiguration extends WebSecurityConfigurerAdapter {
     @Autowired
     AppUserDetailsService appUserDetailsService;
 
+    @Value("${deply.cors}")
+    String deployCors;
+
+
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(appUserDetailsService).passwordEncoder(NoOpPasswordEncoder.getInstance());
     }
@@ -38,16 +43,9 @@ public class WebConfiguration extends WebSecurityConfigurerAdapter {
         return new WebMvcConfigurerAdapter() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                // Heroku deploy
-                registry.addMapping("/**").allowedOrigins("https://shoppingcartfrontend.herokuapp.com");
-               // DEV
-                // registry.addMapping("/**").allowedOrigins("http://localhost:4200");
+                 registry.addMapping("/**").allowedOrigins(deployCors);
 
             }
-//            @Override
-//            public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
-//                configurer.enable();
-//            }
         };
     }
 
