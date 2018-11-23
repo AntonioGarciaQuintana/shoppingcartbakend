@@ -20,7 +20,7 @@ public class AccountController {
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public ResponseEntity<?> createUser(@RequestBody User newUser) {
         if (userService.getUserByUserName(newUser.getUsername()) != null) {
-            return new ResponseEntity("El nombre de usuario " + newUser.getUsername() + " ya existe", HttpStatus.CONFLICT);
+            return new ResponseEntity("The username " + newUser.getUsername() + " already exist", HttpStatus.CONFLICT);
         }
         newUser.setRole("USER");
         return new ResponseEntity<User>(userService.saveUser(newUser), HttpStatus.CREATED);
