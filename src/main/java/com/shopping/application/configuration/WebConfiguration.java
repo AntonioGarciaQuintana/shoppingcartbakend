@@ -36,8 +36,6 @@ public class WebConfiguration extends WebSecurityConfigurerAdapter {
 
 
 
-    // this configuration allow the client app to access the this api
-    // all the domain that consume this api must be included in the allowed o'rings
     @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurerAdapter() {
@@ -57,7 +55,6 @@ public class WebConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                .cors().disable()
                 .authorizeRequests()
                 .antMatchers(HttpMethod.OPTIONS, "/**").permitAll()
                 .anyRequest()
