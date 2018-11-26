@@ -47,6 +47,10 @@ public class Product {
     @Column(name = "active")
     private boolean active;
 
+    @NotNull
+    @Column(name = "delete_product", columnDefinition="bit default 'false'")
+    private boolean delete;
+
     @Transient
     private String imageUrl;
 
@@ -129,6 +133,14 @@ public class Product {
 
     public void setDocument(Document document) {
         this.document = document;
+    }
+
+    public boolean isDelete() {
+        return delete;
+    }
+
+    public void setDelete(boolean delete) {
+        this.delete = delete;
     }
 }
 

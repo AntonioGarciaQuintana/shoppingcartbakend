@@ -18,6 +18,9 @@ public class DetailSale {
     @Column(name = "number_products")
     private int numberProducts;
 
+    @Column(name = "unit_cost")
+    private BigDecimal unitCost;
+
     @Column(name = "sub_total")
     private BigDecimal subTotal;
 
@@ -51,5 +54,13 @@ public class DetailSale {
 
     public void setSubTotal(BigDecimal subTotal) {
         this.subTotal = subTotal;
+    }
+
+    public BigDecimal getUnitCost() {
+        return unitCost;
+    }
+
+    public void setUnitCost(BigDecimal unitCost) {
+        this.unitCost = unitCost;
     }
 }

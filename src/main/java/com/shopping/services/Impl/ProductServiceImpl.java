@@ -1,14 +1,13 @@
 package com.shopping.services.Impl;
 
 import com.shopping.entities.Book;
-import com.shopping.entities.Movie;
 import com.shopping.entities.Product;
 import com.shopping.entities.User;
 import com.shopping.enums.CateroryEnum;
 import com.shopping.repositories.ProductRepository;
 import com.shopping.services.ProductService;
 import com.shopping.services.UserService;
-import org.apache.logging.log4j.util.ProcessIdUtil;
+import com.shopping.services.UtilService;
 import org.apache.tomcat.util.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -26,10 +25,12 @@ public class ProductServiceImpl implements ProductService {
 
     private ProductRepository productRepository;
     private UserService userService;
+    private UtilService utilService;
 
     @Autowired
-    ProductServiceImpl(ProductRepository productRepository, UserService userService){
+    ProductServiceImpl(ProductRepository productRepository, UserService userService, UtilService utilService){
         this.productRepository = productRepository;
+        this.userService = userService;
         this.userService = userService;
     }
 
@@ -53,7 +54,7 @@ public class ProductServiceImpl implements ProductService {
         saveDefaultAdmin();
         Page<Product> page = this.productRepository.getPage(pageable, search, cateroryEnum);
         page.getContent().forEach( product -> {
-            product.setImageUrl(encodeBase(product.getDocument().getFile()));
+            product.setImageUrl(this.utilService.encodeBase(product.getDocument().getFile()));
         });
         return page;
     }
@@ -62,7 +63,7 @@ public class ProductServiceImpl implements ProductService {
     public Page<Product> getPageAll(Pageable pageable, String search, CateroryEnum cateroryEnum) {
         Page<Product> page = this.productRepository.getPageAll(pageable, search, cateroryEnum);
         page.getContent().forEach( product -> {
-            product.setImageUrl(encodeBase(product.getDocument().getFile()));
+            product.setImageUrl(this.utilService.encodeBase(product.getDocument().getFile()));
         });
         return page;
     }
@@ -94,7 +95,8 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public void deleteProduct(Long id) {
         Product p = this.productRepository.getProductById(id);
-        this.productRepository.delete(p);
+        p.setDelete(true);
+        this.productRepository.save(p);
     }
 
     @Override
@@ -112,13 +114,10 @@ public class ProductServiceImpl implements ProductService {
         }
         List<Product> ret = this.productRepository.getProductByIds(idsProd);
         for (Product product: ret){
-            product.setImageUrl(encodeBase(product.getDocument().getFile()));
+            product.setImageUrl(this.utilService.encodeBase(product.getDocument().getFile()));
         }
         return ret;
     }
 
-    public String encodeBase(byte[] file){
-        Base64 codec = new Base64();
-        return codec.encodeAsString(file);
-    }
+
 }

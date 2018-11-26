@@ -20,12 +20,13 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
     @Query("SELECT P FROM Product P " +
             "WHERE (P.name LIKE CONCAT('%',:search,'%') " +
             "AND (:category IS NULL OR  P.category = :category) )" +
-            "AND P.active = true")
+            "AND P.active = true and P.delete = false")
     Page<Product> getPage(Pageable pageable, @Param("search") String search, @Param("category") CateroryEnum cateroryEnum);
 
     @Query("SELECT P FROM Product P " +
             "WHERE P.name LIKE CONCAT('%',:search,'%') " +
-            "AND (:category IS NULL OR  P.category = :category) ")
+            "AND (:category IS NULL OR  P.category = :category) " +
+            "AND P.delete = false")
     Page<Product> getPageAll(Pageable pageable, @Param("search") String search, @Param("category") CateroryEnum cateroryEnum);
 
     @Query("SELECT P FROM Product P WHERE P.id = :idProduct")
