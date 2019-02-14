@@ -31,7 +31,7 @@ public class ProductServiceImpl implements ProductService {
     ProductServiceImpl(ProductRepository productRepository, UserService userService, UtilService utilService){
         this.productRepository = productRepository;
         this.userService = userService;
-        this.userService = userService;
+        this.utilService = utilService;
     }
 
     public Product saveProduct(Product product) {
